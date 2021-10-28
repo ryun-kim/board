@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
       <facet type="webservices" name="WebServices">
         <configuration ws.engine="Apache Axis" />
@@ -26,6 +27,5 @@
     <orderEntry type="library" name="javax.servlet.api" level="project" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="gson-2.8.5" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.27" level="project" />
   </component>
 </module>

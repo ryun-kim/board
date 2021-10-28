@@ -6,40 +6,29 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-@WebServlet(name = "hi", value = "/hi")
+
+@WebServlet(name = "hello", value = "/hello")
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        String name = req.getParameter("name");
-        String age = req.getParameter("age");
-        System.out.println("name :" + name );
-        System.out.println("age : " + age);
+        System.out.println("qwefefwef");
+        String addr = req.getParameter("addr");
+        String phone = req.getParameter("phone");
+        String gender = req.getParameter("gender");
 
-        PrintWriter out = res.getWriter();
-        TestVO vo = new TestVO();
-        vo.setName("ryun");
-        vo.setAge(10);
-
-        String result =String.format("{ \"name\": \"%s\", \"age\": %s}", vo.getName(), vo.getAge());
-        out.print(result);
-
-        Gson gson = new Gson();
-        String result2 = gson.toJson(vo);
-        TestVO vo2 = gson.fromJson(result2, TestVO.class);
-        System.out.println("result2:" + result2);
-        out.print(result);
+        System.out.println("addr :" + addr);
+        System.out.println("phone : " + phone);
+        System.out.println("gender : " + gender);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        System.out.println("POST POST POST");
         String data = Utils.getJson(req);
-
         Gson gson = new Gson();
         TestVO vo = gson.fromJson(data, TestVO.class);
-        System.out.println("name :" + vo.getName());
-        System.out.println("age : " + vo.getAge());
-        System.out.println(data);
+        System.out.println(vo.getName());
+        System.out.println(vo.getAge());
     }
 }
