@@ -30,12 +30,15 @@ public class BoardListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_list);
         adapter = new BoardListAdapter();
-        rvList = findViewById(R.id.rvList);
 
+        rvList = findViewById(R.id.rvList);
         rvList.setAdapter(adapter);
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
         getBoardList();
     }
-
     //글쓰기 Activity로 이동
    public void clkWrite(View v){
         Intent intent = new Intent(this, BoardWriteActivity.class);
@@ -96,6 +99,7 @@ class BoardListAdapter extends RecyclerView.Adapter<BoardListAdapter.MyViewHolde
                 Log.i("myLog", "iboard : "+ vo.getIboard());
 
                 Intent intent = new Intent(view.getContext(), BoardDetailActivity.class);
+                intent.putExtra("iboard", vo.getIboard());
                 view.getContext().startActivity(intent);
             }
         });

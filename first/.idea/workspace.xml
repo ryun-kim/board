@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77ac371-f00d-41b8-bad1-5473bc247aca" name="Changes" comment="21-10-28" />
+    <list default="true" id="c77ac371-f00d-41b8-bad1-5473bc247aca" name="Changes" comment="21-10-28">
+      <change afterPath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardModActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Board/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Board/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardDetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Board/app/src/main/java/com/koreait/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Board/app/src/main/res/layout/activity_board_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Board/app/src/main/res/layout/activity_board_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boardServer" beforeDir="false" afterPath="$PROJECT_DIR$/../boardServer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -65,7 +74,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Application.StudentDAO">
+  <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.54">
     <configuration name="DbUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.koreait.server.DbUtils" />
       <module name="first" />
@@ -182,16 +191,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DbUtils" />
-      <item itemvalue="Application.StudentDAO" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.54" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.54" />
+      <item itemvalue="애플리케이션.DbUtils" />
+      <item itemvalue="애플리케이션.StudentDAO" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.StudentDAO" />
-        <item itemvalue="Application.DbUtils" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -206,6 +209,8 @@
       <workItem from="1635295008482" duration="19646000" />
       <workItem from="1635321412068" duration="390000" />
       <workItem from="1635422831647" duration="1546000" />
+      <workItem from="1636460746387" duration="19000" />
+      <workItem from="1636460777176" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="21-10-27">
       <created>1635320928322</created>

@@ -20,5 +20,13 @@ public interface BoardService {
     @GET("sel")
     Call<BoardVO> selBoardDetail(@Query("iboard") int iboard);
 
+    @POST("upd")
+    Call<Void> updBoard(@Body BoardVO param);
+
+    @GET("del")
+    Call<Void> delBoard(@Query("iboard") int iboard);
+
+
+
 
 }
