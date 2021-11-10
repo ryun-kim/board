@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardWriteActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="제목"
+        />
+    <EditText
+        android:id="@+id/etCtnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용"/>
+
+    <EditText
+        android:id="@+id/etWriter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="작성자">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:onClick="clkSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/write"
+            android:layout_marginRight="20sp"
+            />
+        <Button
+            android:onClick="clkCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancle"/>
+    </LinearLayout>
+
+
+</LinearLayout>

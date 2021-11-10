@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardDetailActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvIboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/iboard"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvCtnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ctnt"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvWriter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/writer"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvRdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:onClick="clkCancle"
+        android:text="@string/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

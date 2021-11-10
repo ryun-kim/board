@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        <input type="text" id="uid" name="uid">
+        <input type="button" id="btn" value="알람 띄우기" onclick="clkBtn();">
+    </div>
+
+    <script>
+        var inputUid = document.getElementById('uid');
+        inputUid.value = '반가워';
+        console.log(inputUid);
+
+        function clkBtn(){
+            alert(inputUid.value);
+        }
+        /*
+        var btn = document.querySelector('#btn');
+        if(btn){
+            btn.addEventListenr('click', clkBtn);
+            btn.onclick = function(){
+                console.log('werq');
+            }
+        }
+        */
+    </script>
+</body>
+</html>

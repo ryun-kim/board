@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그</title>
+</head>
+<body>
+    <h1>form 태그</h1>
+    <hr>
+    <!--
+        action: 주소값 (form  태그 안에 작성된 내용을 들고 갈 목표 주소값)
+        method: get, post
+    -->
+    <form action="/join" method="get">
+        <div>아이디 :  <input type="text" name="uid"></div>
+        <div>
+            <label>비밀번호 : <input type="password" name="upw"></label>
+        </div>
+        <div>
+            <input type="text" name="unm" placeholder="이름">
+        </div>
+        <div>
+            <label>여성:<input type="radio" name="gender" value="f" checked></label>
+            남성:<input type="radio" name="gender" value="m">
+        </div>
+        <div>
+            <label>농구:<input type="checkbox" name="hobby" value="1"></label>
+            <label>축구:<input type="checkbox" name="hobby" value="2"></label>
+            <label>배구:<input type="checkbox" name="hobby" value="3"></label>
+        </div>
+        <div>
+            나의 소개 : <textarea name="status"></textarea>
+        </div>
+        <div>
+            지역:
+            <select name="sido">
+                <option value="1">서울시</option>
+                <option value="2">대구시</option>
+                <option value="3">부산시</option>
+            </select>
+        </div>
+        <div>
+            <input type="hidden" name="secret" value="10"></div>
+        </div>
+        <div>
+            <input type="submit" value="전송1">
+            <input type="button" value="전송2">
+            <button>전송3</button>
+            <input type="reset" value="초기화">
+        </div>
+    </form>
+
+    <a href="/list?name=값&age=값">이동</a>
+</body>
+</html>
