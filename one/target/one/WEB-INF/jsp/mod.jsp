@@ -11,7 +11,7 @@
 <body>
     <h1>글 수정</h1>
     <form action="/mod" method="post" id="frm">
-        <input type="hidden" name="iboard" value="<%= vo.getIboard() %>"
+        <input type="hidden" name="iboard" value="<%= vo.getIboard() %>">
         <div><input type="text" name="title" placeholder="제목" value="<%= vo.getTitle() %>" ></div>
         <div>
             <textarea name="ctnt" placeholder="내용" ><%= vo.getCtnt() %></textarea>
